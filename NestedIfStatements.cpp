@@ -3,6 +3,7 @@ using namespace std;
 
 int main()
 {
+	// Create variables to store inputted numbers
 	float firstNumber;
 	float secondNumber;
 	float thirdNumber;
@@ -16,19 +17,19 @@ int main()
 	cout << "Enter your third number: ";
 	cin >> thirdNumber;
 
-	if (firstNumber > secondNumber) {
-		if (firstNumber > thirdNumber) {
+	if (firstNumber > secondNumber) { // Check if firstNumber is larger than secondNumber
+		if (firstNumber > thirdNumber) { // Check if firstNumber is larger than thirdNumber
 			cout << "The first number: " << firstNumber << ", is the largest!" << endl;
 		}
-		else {
+		else { // thirdNumber is the largest
 			cout << "The third number: " << thirdNumber << ", is the largest!" << endl;
 		}
 	}
-	else {
-		if (secondNumber > thirdNumber) {
+	else { // secondNumber is larger than firstNumber
+		if (secondNumber > thirdNumber) { // Check if secondNumber is larger than thirdNumber
 			cout << "The second number: " << secondNumber << ", is the largest!" << endl;
 		}
-		else {
+		else { // thirdNumber is the largest
 			cout << "The third number: " << thirdNumber << ", is the largest!" << endl;
 		}
 	}
